@@ -1,48 +1,50 @@
-*{  
-    padding: 0;
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-html, body {
-   margin: 0;
-   padding: 0;
- }
- /* Estilo del botón */
- #greenButton {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   background-color: black;
-   color: white;
-   font-size: 16px;
-   padding: 10px 20px;
-   border-radius: 5px;
-   cursor: pointer;
-   opacity: 0;
-   transition: opacity 0.5s ease-in-out;
-   animation: blink 2s linear infinite;
-   border: 2px solid transparent;
- }
+plugins: []
 
- #greenButton:hover {
-   background-color: green;
-   color: black;
-   animation: none;
-   border: 2px solid green;
- }
- 
- /* Estilo para mostrar el botón */
- #greenButton.visible {
-   opacity: 1;
- }
- @keyframes blink {
-   5% {
-     border-color: black;
-   }
-   to {
-     border-color: green;
-   }
- }
- 
+html, body {  
+  margin: 0;
+  padding: 0;
+}
+
+#greenButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  animation: blink 2s linear infinite;
+  border: 2px solid transparent;
+}
+
+#greenButton:hover {
+  background-color: green;
+  color: black;
+  animation: none;
+  border: 2px solid green;
+}
+
+#greenButton.visible {
+  opacity: 1;
+}
+
+@keyframes blink {
+  5% {
+    border-color: black;
+  }
+  to {
+    border-color: green;
+  }
+}
+
