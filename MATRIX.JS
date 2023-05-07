@@ -42,9 +42,11 @@ setTimeout(() => {
   button.innerHTML = 'Just go';
 }, 9000);
 
-
 setTimeout(function() {
-  window.location.href = "https://www.youtube.com/watch?v=WU0gvPcc3jQ&ab_channel=UnrealEngine";
-  }, 9700);
+  canvas.style.display = "none";
+  canvas.remove();
+  button.remove();
+}, 9700);
+
 
 setInterval(matrix,50);
