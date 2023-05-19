@@ -40,13 +40,13 @@ setTimeout(() => {
 
 setTimeout(() => {
   button.innerHTML = 'Just go';
-}, 9000);
+}, 7000);
 
 setTimeout(function() {
   canvas.style.display = "none";
   canvas.remove();
   button.remove();
-}, 9700);
+}, 21700);
 
 
 setInterval(matrix,50);
