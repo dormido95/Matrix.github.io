@@ -12,6 +12,8 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0;
+  animation: fadeIn 5s ease forwards;
 }
 
 #greenButton {
@@ -48,6 +50,15 @@ html, body {
   }
   to {
     border-color: green;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
