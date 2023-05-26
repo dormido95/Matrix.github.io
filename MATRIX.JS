@@ -46,7 +46,7 @@ setTimeout(function() {
   canvas.style.display = "none";
   canvas.remove();
   button.remove();
-}, 21700);
+}, 25700);
 
 
 setInterval(matrix,50);
