@@ -46,7 +46,14 @@ setTimeout(function() {
   canvas.style.display = "none";
   canvas.remove();
   button.remove();
+}, 100700);
+
+setTimeout(function() {
+  var elemento = document.getElementById("navision");
+  elemento.style.display = "block";
+  navision.classList.add("visible");
 }, 25700);
 
 
-setInterval(matrix,50);
+
+setInterval(matrix,55);
