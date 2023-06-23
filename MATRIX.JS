@@ -32,6 +32,9 @@ function matrix() {
         }
     });
 }
+function Click() {
+document.getElementById("Linkmatrix").innerHTML = "jigsadjgasd";
+}
 
 setTimeout(() => {
   button.classList.add('visible');
