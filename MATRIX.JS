@@ -33,7 +33,7 @@ function matrix() {
     });
 }
 function Click() {
-document.getElementById("Linkmatrix").innerHTML = "jigsadjgasd";
+document.getElementById("Linkmatrix").innerHTML = "Se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
 }
 
 setTimeout(() => {
@@ -49,11 +49,10 @@ setTimeout(function() {
   canvas.style.display = "none";
   canvas.remove();
   button.remove();
-}, 100700);
+}, 25700);
 
 setTimeout(function() {
   var elemento = document.getElementById("navision");
-  elemento.style.display = "block";
   navision.classList.add("visible");
 }, 25700);
 

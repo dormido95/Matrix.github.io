@@ -59,11 +59,13 @@ body::after {
   flex-direction: row;
   justify-content: flex-end;
   transition: left 0.5s ease-in-out;
+  
 }
 #navision a {
   text-decoration: none;
   color: rgb(40, 116, 40);
   padding: 10px;
+  background: transparent;
 }
 #navision.visible {
   width: 100%;
@@ -71,6 +73,20 @@ body::after {
   justify-content: flex-start;
   
 }
+main section .introduction{
+    position: relative;
+    color: rgb(40, 116, 40);
+    z-index: 9999; 
+    top: 35vh;
+    display: grid;
+    grid-template-columns: 2fr 1.3fr 0.05fr;
+    grid-template-rows: 1fr;
+}
+#Linkmatrix{
+  grid-column: 2;
+}
+
+
 @keyframes blink {
   5% {
     border-color: green;
@@ -80,7 +96,7 @@ body::after {
   }
 }
 @keyframes fadeIn {
-  20% {
+  30% {
     opacity: 0;
   }
   100% {
