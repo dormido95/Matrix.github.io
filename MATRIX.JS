@@ -33,7 +33,7 @@ function matrix() {
     });
 }
 function Click() {
-document.getElementById("Linkmatrix").innerHTML = "Se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
+document.getElementById("Linkmatrix").innerHTML = "Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
 }
 
 setTimeout(() => {
