@@ -9,9 +9,9 @@ const w = canvas.width;
 const h = canvas.height;
 
 ctx.fillStyle = "#000";
-ctx.fillRect(0,0,w,h);
+ctx.fillRect(0, 0, w, h);
 
-const cols = Math.floor(w/20) + 1;
+const cols = Math.floor(w / 20) + 1;
 const posicion_y = Array(cols).fill(0);
 
 function matrix() {
@@ -31,7 +31,14 @@ function matrix() {
             posicion_y[ind] = y + 20;
         }
     });
+
+    // Vuelve a llamar a la función matrix después de un tiempo determinado (en este caso, 100 milisegundos).
+    setTimeout();
 }
+matrix();
+
+
+
 function Click() {
 document.getElementById("Linkmatrix").innerHTML = "Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
 }
