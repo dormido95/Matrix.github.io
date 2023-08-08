@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background: black;
+  animation: fadeOut 3s ease forwards;
 }
 body::after {
   content: '';
@@ -19,12 +20,13 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
- 
+  background-image: url(./matrix.jpg); 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0;
-  animation: fadeIn 30s ease forwards;
+  animation: fadeIn 13s ease forwards;
+  
 }
 #greenButton {
   position: absolute;
@@ -87,6 +89,10 @@ main section .introduction{
   grid-column: 2;
 }
 
+.fadeOutAnimationClass {
+  animation: fadeOut 3s ease forwards;
+}
+
 
 @keyframes blink {
   5% {
@@ -96,6 +102,7 @@ main section .introduction{
     border-color: black;
   }
 }
+
 @keyframes fadeIn {
   30% {
     opacity: 0;
@@ -104,6 +111,14 @@ main section .introduction{
     opacity: 1;
   }
 
+}
 
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 
 }

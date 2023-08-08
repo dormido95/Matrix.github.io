@@ -9,9 +9,9 @@ const w = canvas.width;
 const h = canvas.height;
 
 ctx.fillStyle = "#000";
-ctx.fillRect(0, 0, w, h);
+ctx.fillRect(0,0,w,h);
 
-const cols = Math.floor(w / 20) + 1;
+const cols = Math.floor(w/20) + 1;
 const posicion_y = Array(cols).fill(0);
 
 function matrix() {
@@ -31,34 +31,20 @@ function matrix() {
             posicion_y[ind] = y + 20;
         }
     });
-
-    // Vuelve a llamar a la función matrix después de un tiempo determinado (en este caso, 100 milisegundos).
-    const currentTime = new Date().getTime();
-    if (currentTime - startTime >= 25700000) { // Detener la animación después de 25700 segundos (25700000 milisegundos)
-        clearInterval(interval);
-    }
 }
-
-//Idea de guardar en una funcion para ejecutar el codigo cada vez que se presione un boton 
-
-// Función que se ejecutará al hacer clic en el botón "Matrix"
-function startMatrixAnimation() {
-  // Limpia el canvas antes de volver a iniciar la animación
-  ctx.clearRect(0, 0, w, h);
-  // Vuelve a llamar a la función matrix a intervalos de 50 milisegundos
-  interval = setInterval(matrix, 80);
-}
-
-// Agrega un evento click al botón "matrixLink"
-const matrixLinkButton = document.getElementById("matrixLink");
-matrixLinkButton.addEventListener("click", startMatrixAnimation);
 
 
 function Click() {
-
-document.getElementById("Linkmatrix").innerHTML = "Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
-
+  // Cambiar el contenido del elemento con id "Linkmatrix"
+  document.getElementById("Linkmatrix").innerHTML = "Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
+  
+  // Agregar la clase para la animación fadeOut
+  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
+  
+  // Quitar la clase fadeIn si está presente
+  document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
 }
+
 
 
 setTimeout(() => {
@@ -68,18 +54,18 @@ setTimeout(() => {
 
 setTimeout(() => {
   button.innerHTML = 'Just go';
-}, 7000);
+}, 5000);
 
 setTimeout(function() {
   
 
   button.remove();
-}, 25700);
+}, 15700);
 
 setTimeout(function() {
   var elemento = document.getElementById("navision");
   navision.classList.add("visible");
-}, 25700);
+}, 8900);
 
 
 
