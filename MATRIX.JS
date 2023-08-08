@@ -39,7 +39,7 @@ function matrix() {
     }
 }
 
-
+//Idea de guardar en una funcion para ejecutar el codigo cada vez que se presione un boton 
 
 // Función que se ejecutará al hacer clic en el botón "Matrix"
 function startMatrixAnimation() {
