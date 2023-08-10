@@ -57,7 +57,8 @@ setTimeout(() => {
 }, 5000);
 
 setTimeout(function() {
-  
+  canvas.style.display = "none";
+  canvas.remove();
 
   button.remove();
 }, 15700);
