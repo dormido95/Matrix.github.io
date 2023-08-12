@@ -45,7 +45,17 @@ function Click() {
   document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
 }
 
+function Click1() {
+  document.getElementById("Linkmatrix").innerHTML = "Descripcion";
+  }
 
+function Click2() {
+  document.getElementById("Linkmatrix").innerHTML = "VIDEO*";
+  }
+
+function Click3() {
+  document.getElementById("Linkmatrix").innerHTML = "login";
+  }
 
 setTimeout(() => {
   button.classList.add('visible');
