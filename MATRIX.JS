@@ -47,15 +47,32 @@ function Click() {
 
 function Click1() {
   document.getElementById("Linkmatrix").innerHTML = "Descripcion";
+  // Agregar la clase para la animación fadeOut
+    document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
+  
+  // Quitar la clase fadeIn si está presente
+  document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
   }
 
 function Click2() {
   document.getElementById("Linkmatrix").innerHTML = "VIDEO*";
+  // Agregar la clase para la animación fadeOut
+  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
+  
+  // Quitar la clase fadeIn si está presente
+  document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
   }
 
 function Click3() {
   document.getElementById("Linkmatrix").innerHTML = "login";
+  // Agregar la clase para la animación fadeOut
+  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
+  
+  // Quitar la clase fadeIn si está presente
+  document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
   }
+
+
 
 setTimeout(() => {
   button.classList.add('visible');
