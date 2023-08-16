@@ -32,9 +32,9 @@ function matrix() {
         }
     });
 }
-
-
-function Click() {
+"Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
+  
+function Click(setTimeout) {
   // Cambiar el contenido del elemento con id "Linkmatrix"
   document.getElementById("Linkmatrix").innerHTML = "Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
   
@@ -43,61 +43,98 @@ function Click() {
   
   // Quitar la clase fadeIn si está presente
   document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
+  setTimeout(function() {
+    document.getElementById("Linkmatrix").innerHTML = "Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
+    
+    // Quitar la clase fadeOut para prepararse para la animación fadeIn
+    document.getElementById("Linkmatrix").classList.remove("fadeOutAnimationClass");
+    
+    // Agregar la clase fadeIn para mostrar el contenido con una animación
+    document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
+  }, 900); // Ajusta el valor del retraso según sea necesario
 }
 
 function Click1() {
-  // Saca la clase fadeIn si está presente
+  // Quitar la clase fadeIn si está presente
   document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
   
   // Agregar la clase para la animación fadeOut después de un pequeño retraso
-  setTimeout(function() {
-    document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
-  }, 1); // Cambia el valor del retraso si es necesario
+  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
   
-  // Cambia el contenido del elemento con id "Linkmatrix"
-  document.getElementById("Linkmatrix").innerHTML = "Descripcion";
+  // Cambiar el contenido del elemento con id "Linkmatrix" después de un retraso
+  
+    document.getElementById("Linkmatrix").innerHTML = "sadasdaasdsdsds";
+    
+    // Quitar la clase fadeOut para prepararse para la animación fadeIn
+    document.getElementById("Linkmatrix").classList.remove("fadeOutAnimationClass");
+    
+    // Agregar la clase fadeIn para mostrar el contenido con una animación
+    document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
 }
 
+
 function Click2() {
-  document.getElementById("Linkmatrix").innerHTML = "VIDEO*";
-  // Agregar la clase para la animación fadeOut
-  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
-  
   // Quitar la clase fadeIn si está presente
   document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
-  }
+  
+  
+  // Agregar la clase para la animación fadeOut después de un pequeño retraso
+  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
+  
+  // Cambiar el contenido del elemento con id "Linkmatrix" después de un retraso
+  setTimeout(function() {
+    document.getElementById("Linkmatrix").innerHTML = "sadasds";
+    
+    // Quitar la clase fadeOut para prepararse para la animación fadeIn
+    document.getElementById("Linkmatrix").classList.remove("fadeOutAnimationClass");
+    
+    // Agregar la clase fadeIn para mostrar el contenido con una animación
+    document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
+  }, 700); // Ajusta el valor del retraso según sea necesario
+}
 
 function Click3() {
-  document.getElementById("Linkmatrix").innerHTML = "login";
-  // Agregar la clase para la animación fadeOut
-  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
-  
   // Quitar la clase fadeIn si está presente
   document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
-  }
+  
+  
+  // Agregar la clase para la animación fadeOut después de un pequeño retraso
+  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
+  
+  // Cambiar el contenido del elemento con id "Linkmatrix" después de un retraso
+  setTimeout(function() {
+    document.getElementById("Linkmatrix").innerHTML = "Descripcion";
+    
+    // Quitar la clase fadeOut para prepararse para la animación fadeIn
+    document.getElementById("Linkmatrix").classList.remove("fadeOutAnimationClass");
+    
+    // Agregar la clase fadeIn para mostrar el contenido con una animación
+    document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
+  }, 900); // Ajusta el valor del retraso según sea necesario
+}
 
 
 
 setTimeout(() => {
   button.classList.add('visible');
   button.innerHTML = 'Searching...';
-}, 3000);
+}, 1000);
 
 setTimeout(() => {
   button.innerHTML = 'Just go';
-}, 5000);
+}, 3000);
 
 setTimeout(function() {
   canvas.style.display = "none";
   canvas.remove();
 
   button.remove();
-}, 10000);
+}, 5000);
 
 setTimeout(function() {
   var elemento = document.getElementById("navision");
   navision.classList.add("visible");
-}, 9900);
+}, 500);
 
 
 
