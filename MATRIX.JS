@@ -57,26 +57,28 @@ function Click(setTimeout) {
 function Click1() {
   // Quitar la clase fadeIn si está presente
   document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
+  document.getElementById("Linkmatrix").innerHTML = "Se refiere a un espacio digital, un entorno virtual creado dentro de la simulación de la Matrix. En otras palabras, es un lugar ficticio dentro de la realidad simulada donde los personajes pueden interactuar y manipular elementos de su entorno utilizando sus mentes y habilidades.";
   
   // Agregar la clase para la animación fadeOut después de un pequeño retraso
   document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
   
   // Cambiar el contenido del elemento con id "Linkmatrix" después de un retraso
-  
-    document.getElementById("Linkmatrix").innerHTML = "sadasdaasdsdsds";
+  setTimeout(function() {
+    document.getElementById("Linkmatrix").innerHTML = "Se refiere a un espacio digital, un entorno virtual creado dentro de la simulación de la Matrix. En otras palabras, es un lugar ficticio dentro de la realidad simulada donde los personajes pueden interactuar y manipular elementos de su entorno utilizando sus mentes y habilidades.";
     
     // Quitar la clase fadeOut para prepararse para la animación fadeIn
     document.getElementById("Linkmatrix").classList.remove("fadeOutAnimationClass");
     
     // Agregar la clase fadeIn para mostrar el contenido con una animación
     document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
+  }, 900); // Ajusta el valor del retraso según sea necesario
 }
 
 
 function Click2() {
   // Quitar la clase fadeIn si está presente
   document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
-  
+  document.getElementById("Linkmatrix").innerHTML = "sadasds";
   
   // Agregar la clase para la animación fadeOut después de un pequeño retraso
   document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
@@ -90,13 +92,13 @@ function Click2() {
     
     // Agregar la clase fadeIn para mostrar el contenido con una animación
     document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
-  }, 700); // Ajusta el valor del retraso según sea necesario
+  }, 900); // Ajusta el valor del retraso según sea necesario
 }
 
 function Click3() {
   // Quitar la clase fadeIn si está presente
   document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
-  
+  document.getElementById("Linkmatrix").innerHTML = "Descripcion";
   
   // Agregar la clase para la animación fadeOut después de un pequeño retraso
   document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
@@ -118,23 +120,23 @@ function Click3() {
 setTimeout(() => {
   button.classList.add('visible');
   button.innerHTML = 'Searching...';
-}, 1000);
+}, 3000);
 
 setTimeout(() => {
   button.innerHTML = 'Just go';
-}, 3000);
+}, 5000);
 
 setTimeout(function() {
   canvas.style.display = "none";
   canvas.remove();
 
   button.remove();
-}, 5000);
+}, 10000);
 
 setTimeout(function() {
   var elemento = document.getElementById("navision");
   navision.classList.add("visible");
-}, 500);
+}, 9900);
 
 
 
