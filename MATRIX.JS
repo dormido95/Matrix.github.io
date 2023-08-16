@@ -46,13 +46,17 @@ function Click() {
 }
 
 function Click1() {
-  document.getElementById("Linkmatrix").innerHTML = "Descripcion";
-  // Agregar la clase para la animación fadeOut
-    document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
-  
-  // Quitar la clase fadeIn si está presente
+  // Saca la clase fadeIn si está presente
   document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
-  }
+  
+  // Agregar la clase para la animación fadeOut después de un pequeño retraso
+  setTimeout(function() {
+    document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
+  }, 1); // Cambia el valor del retraso si es necesario
+  
+  // Cambia el contenido del elemento con id "Linkmatrix"
+  document.getElementById("Linkmatrix").innerHTML = "Descripcion";
+}
 
 function Click2() {
   document.getElementById("Linkmatrix").innerHTML = "VIDEO*";
@@ -88,12 +92,12 @@ setTimeout(function() {
   canvas.remove();
 
   button.remove();
-}, 15700);
+}, 10000);
 
 setTimeout(function() {
   var elemento = document.getElementById("navision");
   navision.classList.add("visible");
-}, 8900);
+}, 9900);
 
 
 
