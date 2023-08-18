@@ -71,7 +71,7 @@ function Click1() {
     
     // Agregar la clase fadeIn para mostrar el contenido con una animación
     document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
-  }, 900); // Ajusta el valor del retraso según sea necesario
+  }, 300); // Ajusta el valor del retraso según sea necesario
 }
 
 
@@ -92,7 +92,7 @@ function Click2() {
     
     // Agregar la clase fadeIn para mostrar el contenido con una animación
     document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
-  }, 900); // Ajusta el valor del retraso según sea necesario
+  }, 300); // Ajusta el valor del retraso según sea necesario
 }
 
 function Click3() {
@@ -112,7 +112,7 @@ function Click3() {
     
     // Agregar la clase fadeIn para mostrar el contenido con una animación
     document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
-  }, 900); // Ajusta el valor del retraso según sea necesario
+  }, 300); // Ajusta el valor del retraso según sea necesario
 }
 
 
@@ -141,3 +141,23 @@ setTimeout(function() {
 
 
 setInterval(matrix,50);
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contact-form");
+  
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    
+    
+    
+    console.log("Nombre:", name);
+    console.log("Correo electrónico:", email);
+    console.log("Mensaje:", message);
+  
+    form.reset();
+  });
+});
