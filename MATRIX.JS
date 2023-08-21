@@ -32,26 +32,15 @@ function matrix() {
         }
     });
 }
-"Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
-  
-function Click(setTimeout) {
+
+function Click() {
   // Cambiar el contenido del elemento con id "Linkmatrix"
-  document.getElementById("Linkmatrix").innerHTML = "Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
-  
-  // Agregar la clase para la animación fadeOut
-  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
-  
-  // Quitar la clase fadeIn si está presente
-  document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
+ 
   setTimeout(function() {
     document.getElementById("Linkmatrix").innerHTML = "Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
     
-    // Quitar la clase fadeOut para prepararse para la animación fadeIn
-    document.getElementById("Linkmatrix").classList.remove("fadeOutAnimationClass");
-    
-    // Agregar la clase fadeIn para mostrar el contenido con una animación
-    document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
-  }, 900); // Ajusta el valor del retraso según sea necesario
+
+  }, 700); // Ajusta el valor del retraso según sea necesario
 }
 
 function Click1() {
@@ -161,3 +150,18 @@ document.addEventListener("DOMContentLoaded", function() {
     form.reset();
   });
 });
+
+
+
+const matrixLink = document.getElementById('matrixLink');
+const body = document.body;
+
+matrixLink.addEventListener('click', () => {
+  // Cambia la opacidad del body a 0 por 3 segundos y luego la restablece a 1
+  body.style.opacity = 0;
+  setTimeout(() => {
+    body.style.opacity = 1;
+  }, 1000); // 3000 milisegundos (3 segundos)
+});
+
+
