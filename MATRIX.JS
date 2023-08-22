@@ -34,77 +34,30 @@ function matrix() {
 }
 
 function Click() {
-  // Cambiar el contenido del elemento con id "Linkmatrix"
- 
   setTimeout(function() {
     document.getElementById("Linkmatrix").innerHTML = "Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
-    
-
-  }, 700); // Ajusta el valor del retraso según sea necesario
+  }, 650); 
 }
 
 function Click1() {
-  // Quitar la clase fadeIn si está presente
-  document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
-  document.getElementById("Linkmatrix").innerHTML = "Se refiere a un espacio digital, un entorno virtual creado dentro de la simulación de la Matrix. En otras palabras, es un lugar ficticio dentro de la realidad simulada donde los personajes pueden interactuar y manipular elementos de su entorno utilizando sus mentes y habilidades.";
-  
-  // Agregar la clase para la animación fadeOut después de un pequeño retraso
-  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
-  
-  // Cambiar el contenido del elemento con id "Linkmatrix" después de un retraso
   setTimeout(function() {
     document.getElementById("Linkmatrix").innerHTML = "Se refiere a un espacio digital, un entorno virtual creado dentro de la simulación de la Matrix. En otras palabras, es un lugar ficticio dentro de la realidad simulada donde los personajes pueden interactuar y manipular elementos de su entorno utilizando sus mentes y habilidades.";
-    
-    // Quitar la clase fadeOut para prepararse para la animación fadeIn
-    document.getElementById("Linkmatrix").classList.remove("fadeOutAnimationClass");
-    
-    // Agregar la clase fadeIn para mostrar el contenido con una animación
-    document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
-  }, 300); // Ajusta el valor del retraso según sea necesario
+  }, 650); 
 }
 
 
 function Click2() {
-  // Quitar la clase fadeIn si está presente
-  document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
-  document.getElementById("Linkmatrix").innerHTML = "sadasds";
-  
-  // Agregar la clase para la animación fadeOut después de un pequeño retraso
-  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
-  
-  // Cambiar el contenido del elemento con id "Linkmatrix" después de un retraso
+
   setTimeout(function() {
     document.getElementById("Linkmatrix").innerHTML = "sadasds";
-    
-    // Quitar la clase fadeOut para prepararse para la animación fadeIn
-    document.getElementById("Linkmatrix").classList.remove("fadeOutAnimationClass");
-    
-    // Agregar la clase fadeIn para mostrar el contenido con una animación
-    document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
-  }, 300); // Ajusta el valor del retraso según sea necesario
+  }, 650); 
 }
 
 function Click3() {
-  // Quitar la clase fadeIn si está presente
-  document.getElementById("Linkmatrix").classList.remove("fadeInAnimationClass");
-  document.getElementById("Linkmatrix").innerHTML = "Descripcion";
-  
-  // Agregar la clase para la animación fadeOut después de un pequeño retraso
-  document.getElementById("Linkmatrix").classList.add("fadeOutAnimationClass");
-  
-  // Cambiar el contenido del elemento con id "Linkmatrix" después de un retraso
   setTimeout(function() {
     document.getElementById("Linkmatrix").innerHTML = "Descripcion";
-    
-    // Quitar la clase fadeOut para prepararse para la animación fadeIn
-    document.getElementById("Linkmatrix").classList.remove("fadeOutAnimationClass");
-    
-    // Agregar la clase fadeIn para mostrar el contenido con una animación
-    document.getElementById("Linkmatrix").classList.add("fadeInAnimationClass");
-  }, 300); // Ajusta el valor del retraso según sea necesario
+  }, 650);
 }
-
-
 
 setTimeout(() => {
   button.classList.add('visible');
@@ -152,16 +105,16 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-const matrixLink = document.getElementById('matrixLink');
+const links = document.querySelectorAll('.fadeInAnimationClass');
 const body = document.body;
 
-matrixLink.addEventListener('click', () => {
-  // Cambia la opacidad del body a 0 por 3 segundos y luego la restablece a 1
-  body.style.opacity = 0;
-  setTimeout(() => {
-    body.style.opacity = 1;
-  }, 1000); // 3000 milisegundos (3 segundos)
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    body.style.opacity = 0;
+    setTimeout(() => {
+      body.style.opacity = 1;
+    },1000); 
+  });
 });
 
 

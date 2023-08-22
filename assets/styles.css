@@ -10,7 +10,6 @@ html, body {
   padding: 0;
   background: black;
   background-image: url(./eugene-belyavskiy-JA0R0Q0tewA-unsplash.jpg);
-
   opacity: 1; 
   transition: opacity 1s ease; 
 }
