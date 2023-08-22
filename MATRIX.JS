@@ -36,6 +36,11 @@ function matrix() {
 function Click() {
   setTimeout(function() {
     
+    body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1510511459019-5dda7724fd87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")';
+
+    body.style.backgroundSize = 'cover';
+    body.style.backgroundRepeat = 'no-repeat';
+    body.style.backgroundPosition = 'center';
     document.getElementById("Linkmatrix").innerHTML = "Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
   }, 650); 
 }
@@ -58,7 +63,7 @@ function Click1() {
 
 function Click2() {
   setTimeout(function() {
-    document.getElementById("Linkmatrix").innerHTML = " Los personajes pueden cargar escenarios simulados para practicar y aprender cómo lidiar con situaciones peligrosas o desafiantes que puedan encontrar en el mundo real de Matrix.";
+    document.getElementById("Linkmatrix").innerHTML = " Las personas pueden cargar escenarios simulados para practicar y aprender con situaciones distintas o desafiantes que puedan encontrar en el mundo real de Matrix para solucionar.";
     const body = document.body;
 
     body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1621323863489-0b9cf05548b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80")';
@@ -87,8 +92,7 @@ setTimeout(() => {
 }, 5000);
 
 setTimeout(function() {
-  canvas.style.display = "none";
-  canvas.remove();
+
 
   button.remove();
 }, 10000);
