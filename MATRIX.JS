@@ -49,7 +49,7 @@ function Click1() {
 function Click2() {
 
   setTimeout(function() {
-    document.getElementById("Linkmatrix").innerHTML = "sadasds";
+    document.getElementById("Linkmatrix").innerHTML = " Los personajes pueden cargar escenarios simulados para practicar y aprender cómo lidiar con situaciones peligrosas o desafiantes que puedan encontrar en el mundo real de Matrix.";
   }, 650); 
 }
 
