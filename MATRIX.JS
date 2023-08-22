@@ -47,7 +47,6 @@ function Click() {
 
 function Click1() {
   setTimeout(function() {
-    
     canvas.style.display = "none";
     canvas.remove();
     document.getElementById("Linkmatrix").innerHTML = "Se refiere a un espacio digital, un entorno virtual creado dentro de la simulación de la Matrix. En otras palabras, es un lugar ficticio dentro de la realidad simulada donde los personajes pueden interactuar y manipular elementos de su entorno utilizando sus mentes y habilidades.";
