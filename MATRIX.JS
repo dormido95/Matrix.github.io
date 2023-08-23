@@ -42,7 +42,10 @@ function Click() {
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundPosition = 'center';
     document.getElementById("Linkmatrix").innerHTML = "Matrix se refiere a una simulación de realidad virtual creada por máquinas para controlar a la humanidad, mientras que en un sentido más amplio, el término puede utilizarse para referirse a cualquier sistema que simule la realidad";
-  }, 650); 
+    document.querySelectorAll("#navision").forEach(function(el) {
+    el.style.background = 'none';
+    });
+  }, 700); 
 }
 
 function Click1() {
@@ -55,6 +58,9 @@ function Click1() {
     body.style.backgroundSize = 'cover';
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundPosition = 'center';
+    document.querySelectorAll("#navision").forEach(function(el) {
+      el.style.background = 'none';
+    });
   }, 650); 
 }
 
@@ -69,6 +75,9 @@ function Click2() {
     body.style.backgroundSize = 'cover';
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundPosition = 'center';
+    document.querySelectorAll("#navision").forEach(function(el) {
+    el.style.background = 'none';
+    });
   }, 650); 
 }
 
@@ -77,6 +86,9 @@ function Click3() {
   canvas.remove();
   setTimeout(function() {
     document.getElementById("Linkmatrix").innerHTML = "Formulario";
+    document.querySelectorAll("#navision").forEach(function(el) {
+    el.style.background = 'none';
+    });
   }, 650);
 }
 
