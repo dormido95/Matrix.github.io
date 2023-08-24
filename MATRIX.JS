@@ -34,6 +34,7 @@ function matrix() {
 }
 
 function Click() {
+
   setTimeout(function() {
     canvas.style.display = "none";
     canvas.remove();
@@ -45,33 +46,35 @@ function Click() {
     document.querySelectorAll("#navision").forEach(function(el) {
     el.style.background = 'none';
     });
-  }, 700); 
+  }, 900); 
 }
 
 function Click1() {
+
   setTimeout(function() {
     canvas.style.display = "none";
     canvas.remove();
     document.getElementById("Linkmatrix").innerHTML = "Se refiere a un espacio digital, un entorno virtual creado dentro de la simulación de la Matrix. En otras palabras, es un lugar ficticio dentro de la realidad simulada donde los personajes pueden interactuar y manipular elementos de su entorno utilizando sus mentes y habilidades.";
     const body = document.body;
-    body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1646226496621-00a09f3cc962?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2188&q=80")';
+    body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1612124974419-da8ee0e92b77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80")';
     body.style.backgroundSize = 'cover';
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundPosition = 'center';
     document.querySelectorAll("#navision").forEach(function(el) {
-      el.style.background = 'none';
+    el.style.background = 'none';
     });
   }, 650); 
 }
 
 
 function Click2() {
+
   setTimeout(function() {
-    canvas.style.display = "none";
-    canvas.remove();
     document.getElementById("Linkmatrix").innerHTML = " Las personas pueden cargar escenarios simulados para practicar y aprender con situaciones distintas o desafiantes que puedan encontrar en el mundo real de Matrix para solucionar.";
     const body = document.body;
-    body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1621323863489-0b9cf05548b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80")';
+    canvas.style.display = "none";
+    canvas.remove();
+    body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1600419388659-7efdcb4ac41f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2034&q=80")';
     body.style.backgroundSize = 'cover';
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundPosition = 'center';
@@ -82,9 +85,16 @@ function Click2() {
 }
 
 function Click3() {
-  canvas.style.display = "none";
-  canvas.remove();
+
   setTimeout(function() {
+    canvas.style.display = "none";
+    canvas.remove();
+    const body = document.body;
+    body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1621323863489-0b9cf05548b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80")';
+    body.style.backgroundSize = 'cover';
+    body.style.backgroundRepeat = 'no-repeat';
+    body.style.backgroundPosition = 'center';
+    document.querySelectorAll("#navision").forEa
     document.getElementById("Linkmatrix").innerHTML = "Formulario";
     document.querySelectorAll("#navision").forEach(function(el) {
     el.style.background = 'none';
