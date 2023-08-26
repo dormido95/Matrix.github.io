@@ -36,6 +36,8 @@ function matrix() {
 function Click() {
 
   setTimeout(function() {
+    const formularioContainer = document.getElementById('formularioContainer');
+    formularioContainer.style.display = 'none';
     canvas.style.display = "none";
     canvas.remove();
     body.style.backgroundImage = 'url("https://images.unsplash.com/photo-1510511459019-5dda7724fd87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80")';
@@ -52,6 +54,8 @@ function Click() {
 function Click1() {
 
   setTimeout(function() {
+    const formularioContainer = document.getElementById('formularioContainer');
+    formularioContainer.style.display = 'none';
     canvas.style.display = "none";
     canvas.remove();
     document.getElementById("Linkmatrix").innerHTML = "Se refiere a un espacio digital, un entorno virtual creado dentro de la simulación de la Matrix. En otras palabras, es un lugar ficticio dentro de la realidad simulada donde los personajes pueden interactuar y manipular elementos de su entorno utilizando sus mentes y habilidades.";
@@ -70,6 +74,8 @@ function Click1() {
 function Click2() {
 
   setTimeout(function() {
+    const formularioContainer = document.getElementById('formularioContainer');
+    formularioContainer.style.display = 'none';
     document.getElementById("Linkmatrix").innerHTML = " Las personas pueden cargar escenarios simulados para practicar y aprender con situaciones distintas o desafiantes que puedan encontrar en el mundo real de Matrix para solucionar.";
     const body = document.body;
     canvas.style.display = "none";
