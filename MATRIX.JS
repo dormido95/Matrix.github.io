@@ -63,7 +63,7 @@ function Click1() {
     document.querySelectorAll("#navision").forEach(function(el) {
     el.style.background = 'none';
     });
-  }, 650); 
+  }, 750); 
 }
 
 
@@ -81,12 +81,11 @@ function Click2() {
     document.querySelectorAll("#navision").forEach(function(el) {
     el.style.background = 'none';
     });
-  }, 650); 
+  }, 750); 
 }
 
 function Click3() {
-
-  setTimeout(function() {
+  setTimeout(function () {
     canvas.style.display = "none";
     canvas.remove();
     const body = document.body;
@@ -94,12 +93,9 @@ function Click3() {
     body.style.backgroundSize = 'cover';
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundPosition = 'center';
-    document.querySelectorAll("#navision").forEa
-    document.getElementById("Linkmatrix").innerHTML = "Formulario";
-    document.querySelectorAll("#navision").forEach(function(el) {
-    el.style.background = 'none';
-    });
-  }, 650);
+    const formularioContainer = document.getElementById('formularioContainer');
+    formularioContainer.style.display = 'block';
+  }, 750);
 }
 
 setTimeout(() => {
@@ -124,25 +120,6 @@ setTimeout(function() {
 
 setInterval(matrix,50);
 
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("contact-form");
-  
-  form.addEventListener("submit", function(event) {
-    event.preventDefault();
-    
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-    
-    
-    
-    console.log("Nombre:", name);
-    console.log("Correo electrónico:", email);
-    console.log("Mensaje:", message);
-  
-    form.reset();
-  });
-});
 
 
 const links = document.querySelectorAll('.fadeInAnimationClass');
